@@ -1,67 +1,51 @@
-
-import type { Technology } from "../types/technology";
+import type { Technology as TechnologyType } from "../types/technology";
 
 interface TechnologyCardProps {
-  technology: Technology;
+  technology: TechnologyType;
+  isSelected: boolean;
+  onToggle: (technology: TechnologyType) => void;
 }
 
-const TechnologyCard = ({ technology }: TechnologyCardProps) => {
+const TechnologyCard = ({ technology, isSelected, onToggle }: TechnologyCardProps) => {
+  const { name, category, description, icon, rating, difficulty, badge } = technology;
+
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-shadow duration-200 hover:shadow-md">
-
-      {/* Top: Icon + Badge */}
-   
-      <div className="flex items-start justify-between">
-           <img
-           src={technology.icon}
-           alt={`${technology.name} icon`}
-           className="h-10 w-10 object-contain"
-                 />
-
-        <span className="rounded-full bg-pink-50 px-3 py-1 text-xs font-semibold text-pink-600">
-          {technology.badge}
+    <div
+      className={`rounded-2xl border bg-white p-6 shadow-sm transition ${
+        isSelected ? "border-slate-900 ring-1 ring-slate-900" : "border-slate-200"
+      }`}
+    >
+      <div className="flex items-center justify-between">
+        <img src={icon} alt={name} className="h-9 w-9" />
+        <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">
+          {badge}
         </span>
       </div>
 
-      {/* Technology Name */}
-      <h3 className="mt-4 text-xl font-bold text-slate-900">
-        {technology.name}
-      </h3>
+      <h3 className="mt-4 text-lg font-bold text-slate-900">{name}</h3>
+      <p className="mt-2 text-sm text-slate-600">{description}</p>
 
-      {/* Description */}
-      <p className="mt-2 text-sm leading-6 text-slate-600">
-        {technology.description}
-      </p>
+      <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
+        <span className="rounded-md bg-slate-100 px-2 py-1">{category}</span>
+        <span>{difficulty}</span>
+        <span className="ml-auto flex items-center gap-1">
+          <span className="text-amber-400">★</span>
+          {rating}
+        </span>
+      </div>
 
-    {/* Category + Difficulty + Rating */}
-<div className="mt-4 flex items-center justify-between gap-3 text-sm">
-  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">
-    {technology.category}
-  </span>
-
-  <span className="text-xs font-medium text-slate-500">
-    {technology.difficulty}
-  </span>
-
-  <div className="flex items-center gap-1">
-    <span className="text-yellow-400">★</span>
-
-    <span className="font-semibold text-slate-800">
-      {technology.rating}
-    </span>
-  </div>
-</div>
-
-      {/* Add to Stack */}
       <button
-        type="button"
-        className="gradient-bg mt-5 w-full rounded-xl px-4 py-3 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
+        onClick={() => onToggle(technology)}
+        className={`mt-4 w-full rounded-lg py-2 text-sm font-semibold transition ${
+          isSelected
+            ? "bg-slate-100 text-slate-900 hover:bg-slate-200"
+            : "bg-slate-900 text-white hover:bg-slate-800"
+        }`}
       >
-        Add to Stack
+        {isSelected ? "Remove from Stack" : "Add to Stack"}
       </button>
     </div>
   );
 };
 
 export default TechnologyCard;
-
