@@ -1,5 +1,6 @@
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
+import Technology from './components/technology'
 import './index.css'
 
 function App() {
@@ -7,6 +8,8 @@ function App() {
     <div>
       <Navbar />
       <Hero />
+      <Technology />
+
     </div>
   )
 }

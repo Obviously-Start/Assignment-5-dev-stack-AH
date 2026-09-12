@@ -4,8 +4,8 @@
     "id": 1,
     "name": "React",
     "category": "Frontend",
-    "description": "A JavaScript library for building fast and interactive user interfaces.",
-    "icon": "⚛️",
+    "description": "A powerful JavaScript library for building fast, interactive, and reusable user interfaces for modern web applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Popular"
@@ -14,48 +14,48 @@
     "id": 2,
     "name": "TypeScript",
     "category": "Language",
-    "description": "A strongly typed programming language that builds on JavaScript.",
-    "icon": "🔷",
+    "description": "A strongly typed language that makes JavaScript development safer and easier to maintain.",
+    "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
-    "badge": "Trending"
+    "badge": "Essential"
   },
   {
     "id": 3,
     "name": "JavaScript",
     "category": "Language",
-    "description": "A versatile programming language used to create dynamic web applications.",
-    "icon": "🟨",
+    "description": "A versatile programming language that brings dynamic behavior and interactivity to web applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": "Essential"
+    "badge": "Ubiquitous"
   },
   {
     "id": 4,
     "name": "Tailwind CSS",
     "category": "Styling",
-    "description": "A utility-first CSS framework for building modern responsive designs.",
-    "icon": "🎨",
+    "description": "A utility-first CSS framework that helps developers create responsive and modern interfaces quickly with reusable utility classes.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
     "rating": 4.8,
     "difficulty": "Beginner",
-    "badge": "Popular"
+    "badge": "Modern"
   },
   {
     "id": 5,
     "name": "Node.js",
     "category": "Backend",
-    "description": "A JavaScript runtime that allows developers to build server-side applications.",
-    "icon": "🟢",
+    "description": "A runtime environment that allows JavaScript to run outside the browser and power scalable backend applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
-    "badge": "Popular"
+    "badge": "Standerd"
   },
   {
     "id": 6,
     "name": "Express.js",
     "category": "Backend",
-    "description": "A lightweight web framework for building APIs and backend applications.",
-    "icon": "🚀",
+    "description": "A lightweight Node.js framework for creating web servers and REST APIs with simple and flexible routing.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Express.svg",
     "rating": 4.6,
     "difficulty": "Intermediate",
     "badge": "Popular"
@@ -64,8 +64,8 @@
     "id": 7,
     "name": "MongoDB",
     "category": "Database",
-    "description": "A flexible NoSQL database designed for modern application development.",
-    "icon": "🍃",
+    "description": "A flexible NoSQL database that stores data in document-based structures and works well with modern applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/MongoDB.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
     "badge": "Popular"
@@ -74,18 +74,18 @@
     "id": 8,
     "name": "Next.js",
     "category": "Framework",
-    "description": "A React framework for building fast and scalable web applications.",
-    "icon": "▲",
+    "description": "A full-stack React framework that provides powerful features such as server rendering, routing, optimization, and API development for production-ready applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Next.js.svg",
     "rating": 4.8,
     "difficulty": "Advanced",
     "badge": "Trending"
   },
   {
     "id": 9,
-    "name": "Vue.js",
+    "name": "Versatile",
     "category": "Frontend",
-    "description": "A progressive JavaScript framework for building user interfaces.",
-    "icon": "💚",
+    "description": "A progressive JavaScript framework designed for creating interactive and component-based user interfaces.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Vue.js.svg",
     "rating": 4.6,
     "difficulty": "Beginner",
     "badge": "Popular"
@@ -94,8 +94,8 @@
     "id": 10,
     "name": "Angular",
     "category": "Frontend",
-    "description": "A TypeScript-based framework for building large-scale web applications.",
-    "icon": "🅰️",
+    "description": "A comprehensive framework for building large-scale, structured, and maintainable web applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Angular.svg",
     "rating": 4.5,
     "difficulty": "Advanced",
     "badge": "Powerful"
@@ -104,8 +104,8 @@
     "id": 11,
     "name": "Python",
     "category": "Language",
-    "description": "A beginner-friendly language widely used in web development, data science, and AI.",
-    "icon": "🐍",
+    "description": "A beginner-friendly programming language widely used for web development, automation, data science, and artificial intelligence.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Python.svg",
     "rating": 4.9,
     "difficulty": "Beginner",
     "badge": "Essential"
@@ -114,8 +114,8 @@
     "id": 12,
     "name": "Git",
     "category": "Tools",
-    "description": "A distributed version control system for tracking and managing code changes.",
-    "icon": "🔀",
+    "description": "A distributed version control system that helps developers track changes, manage branches, and collaborate on projects.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Git.svg",
     "rating": 4.8,
     "difficulty": "Beginner",
     "badge": "Essential"
@@ -124,18 +124,18 @@
     "id": 13,
     "name": "Docker",
     "category": "DevOps",
-    "description": "A platform for packaging applications and their dependencies into containers.",
-    "icon": "🐳",
+    "description": "A containerization platform that packages applications and their dependencies into portable environments for consistent development and deployment.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
     "rating": 4.7,
     "difficulty": "Advanced",
-    "badge": "Powerful"
+    "badge": "Containers"
   },
   {
     "id": 14,
     "name": "Figma",
     "category": "Design",
-    "description": "A collaborative design tool for creating interfaces, prototypes, and design systems.",
-    "icon": "🖌️",
+    "description": "A collaborative design platform used to create user interfaces, prototypes, wireframes, and design systems.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Figma.svg",
     "rating": 4.6,
     "difficulty": "Beginner",
     "badge": "Popular"
@@ -144,8 +144,8 @@
     "id": 15,
     "name": "Firebase",
     "category": "Backend",
-    "description": "A Google platform providing backend services for web and mobile applications.",
-    "icon": "🔥",
+    "description": "A Google-backed platform that provides authentication, databases, hosting, storage, and other backend services for web and mobile applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Firebase.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
     "badge": "Trending"
