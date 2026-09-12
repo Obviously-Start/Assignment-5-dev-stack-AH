@@ -3,10 +3,10 @@ import type { Technology as TechnologyType } from "../types/technology";
 interface TechnologyCardProps {
   technology: TechnologyType;
   isSelected: boolean;
-  onToggle: (technology: TechnologyType) => void;
+  onAdd: (technology: TechnologyType) => void;
 }
 
-const TechnologyCard = ({ technology, isSelected, onToggle }: TechnologyCardProps) => {
+const TechnologyCard = ({ technology, isSelected, onAdd }: TechnologyCardProps) => {
   const { name, category, description, icon, rating, difficulty, badge } = technology;
 
   return (
@@ -35,14 +35,14 @@ const TechnologyCard = ({ technology, isSelected, onToggle }: TechnologyCardProp
       </div>
 
       <button
-        onClick={() => onToggle(technology)}
-        className={`mt-4 w-full rounded-lg py-2 text-sm font-semibold transition ${
+        onClick={() => onAdd(technology)}
+        className={`mt-4 w-full cursor-pointer rounded-lg py-2 text-sm font-semibold transition ${
           isSelected
-            ? "bg-slate-100 text-slate-900 hover:bg-slate-200"
+            ? "bg-slate-100 text-slate-400"
             : "bg-slate-900 text-white hover:bg-slate-800"
         }`}
       >
-        {isSelected ? "Remove from Stack" : "Add to Stack"}
+        {isSelected ? "✓ Added to Stack" : "Add to Stack"}
       </button>
     </div>
   );
