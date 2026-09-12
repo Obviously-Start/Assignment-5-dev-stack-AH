@@ -22,8 +22,8 @@ Users can browse a curated list of technologies (React, Node.js, MongoDB, Next.j
 
 ## 🔗 Links
 
-- **GitHub Repository:** ([https://github.com/Obviously-Start/Assignment-5-dev-stack-AH])
-- **Live Site:** ([https://assignment-5-dev-stack-ah.netlify.app/])
+- **GitHub Repository:** [Assignment-5-dev-stack-AH](https://github.com/Obviously-Start/Assignment-5-dev-stack-AH)
+- **Live Site:** [assignment-5-dev-stack-ah.netlify.app](https://assignment-5-dev-stack-ah.netlify.app/)
 
 ---
 
